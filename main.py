@@ -9,65 +9,54 @@ print("Auto: Hello!")
 
 import turtle as t
 
-t.speed(0.1)
+t.speed(1)
 
 t.width(5)
     
 t.color("#ff0000")
 
-xx = -360
-yy= 260
-t.penup()
-t.goto(xx, yy)
-t.pendown()
-
-def drawTriangle(length):
-    for _ in range(3):
-        t.forward(10)
-        t.left(360/3)
 
 
 def drawSquare(length):
+    t.left(90)
     for _ in range(4):
-        t.forward(10)
+        t.forward(100)
         t.left(360/4)
 
-def drawHouse():
-    drawTriangle(3)
-    t.right(90)
-    drawSquare(4)
+def drawRectangle(width, length):
+    for _ in range(2):        
+        t.forward(50)
+        t.left(360/4)
+        t.forward(100)  
+        t.left(360/4)
 
-def drawSoi(space):
+def drawTriangle(length):
+    for _ in range(3):
+        t.forward(100)
+        t.right(360/3)
+
+def drawCircle(length):
+    for _ in range(360):        
+        t.forward(10)
+        t.left(360/360)
+
+def drawPentagon(length):
     for _ in range(5):
-        drawHouse()
-        t.left(90)
-        t.penup()
-        t.forward(20)
-        t.pendown()
+        t.forward(100)
+        t.left(360/5)
 
-def drawPhase(space):
-    for _ in range(4):
-        drawSoi(0)
-        t.penup()
-        t.goto(t.xcor()-100, t.ycor()-30)
-        t.pendown()
+def drawHexagon(length):
+    for _ in range(6):
+        t.forward(100)
+        t.left(360/6)
 
-def drawVillage():
-    for _ in range(2):
-        drawPhase(0)
-        t.penup()
-        t.goto(t.xcor(), t.ycor()-20)
-        t.pendown()
-    t.penup()
-    t.goto(-230, 260)
-    t.pendown()
-    for _ in range(2):
-        drawPhase(0)
-        t.penup()
-        t.goto(-230, t.ycor()-20)
-        t.pendown()
+def drawHouse():
+    drawSquare(4)
+    t.forward(100)
+    t.left(90)
+    drawTriangle(3)
 
-drawVillage()
 
+# drawHouse()
+drawHexagon(100)
 t.done()
-

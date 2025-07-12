@@ -58,7 +58,8 @@ def drawHouse():
 
 
 # drawHouse()
-drawHexagon(100)
+# drawHexagon(100)
+
 t. speed(10)
 
 def draw_hexagon(lenght):

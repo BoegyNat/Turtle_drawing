@@ -1,15 +1,26 @@
 import turtle as t
+t. speed(10)
 
-
-
-
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-
-
+def draw_hexagon(lenght):
+    t.forward(lenght)
+    t.left(60)
+    t.forward(lenght)
+    t.left(60)
+    t.forward(lenght)
+    t.left(60)
+    t.forward(lenght)
+    t.left(60)
+    t.forward(lenght)
+    t.left(60)
+    t.forward(lenght)
+def draw_square(lenght):
+    t.forward(lenght)
+    t.left(90)
+    t.forward(lenght)
+    t.left(90)
+    t.forward(lenght)
+    t.left(90)
+    t.forward(lenght)
+draw_hexagon(50)
+# draw_square(50)
 t.done()

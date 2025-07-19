@@ -31,27 +31,15 @@ def drawPentagon(length):
         t.forward(length)
         t.left(360/5)
 
-def drawHexagon(lenght):
-    t.forward(lenght)
+def drawHexagon(length):
+ for i in range(6):
+    t.forward(length)
     t.left(60)
-    t.forward(lenght)
-    t.left(60)
-    t.forward(lenght)
-    t.left(60)
-    t.forward(lenght)
-    t.left(60)
-    t.forward(lenght)
-    t.left(60)
-    t.forward(lenght)
 
-def drawSquare(lenght):
-    t.forward(lenght)
+def drawSquare(length):
+ for i in range(4):
+    t.forward(length)
     t.left(90)
-    t.forward(lenght)
-    t.left(90)
-    t.forward(lenght)
-    t.left(90)
-    t.forward(lenght)
 
 def Goto(x, y):
     t.penup()
@@ -75,5 +63,9 @@ t.penup()
 t.forward(200)
 t.pendown()
 drawHexagon(50)
-
+t.penup()
+t.backward(100)
+t.pendown()
+drawSquare(50)
 t.done()
+commit crime scene is bad ok

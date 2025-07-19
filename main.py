@@ -1,7 +1,7 @@
 # Configuration Section
 import turtle as t
 
-t.speed(1000)
+t.speed(1000000000)
 
 t.width(5)
     
@@ -49,11 +49,11 @@ def Goto(x, y):
 # Function to draw any thing
 def drawHouse():
     t.left(90)
-    drawSquare(100)
+    drawSquare(200)
     # t.left(90)
-    t.forward(100)
+    t.forward(200)
     t.left(90)
-    drawTriangle(100)
+    drawTriangle(200)
 
 def drawTree():
     t.left(180)    
@@ -64,6 +64,49 @@ def drawTree():
     t.backward(25)
     drawPentagon(100)
 
+def drawPlatypus():
+    # body
+    drawRectangle(100, 50)
+    # tail    
+    t.forward(100)
+    t.left(90)
+    t.forward(35)
+    t.right(90)
+    drawTriangle(50)
+    # mouth
+    t.left(90)
+    t.backward(35)
+    t.left(90)
+    t.forward(150)
+    t.right(90)
+    t.forward(25)
+    t.right(90)
+    t.forward(50)
+    # legs    
+    t.right(90)
+    t.forward(50)        
+    t.backward(25)
+    t.left(90)
+    t.forward(30)
+    t.right(90)
+    t.forward(25)
+    t.backward(25)
+    t.left(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(25)
+    t.backward(25)
+    t.left(90)
+    t.forward(30)
+    t.right(90)
+    t.forward(25)
+    # eye
+    t.backward(60)
+    t.right(90)
+    t.penup()
+    t.forward(80)
+    t.pendown()
+    drawCircle(0.1)
 
 
 
@@ -72,8 +115,10 @@ def drawTree():
 
 # Main Section
 drawHouse()
-Goto(300, 0)
+Goto(360, 0)
 drawTree()
+Goto(90, 25)
+drawPlatypus()
 # t.right(180)
 # t.penup()
 # t.forward(200)

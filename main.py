@@ -1,7 +1,7 @@
 # Configuration Section
 import turtle as t
 
-t.speed(100)
+t.speed(1000)
 
 t.width(5)
     
@@ -9,6 +9,11 @@ t.color("#ff0000")
 
 
 # Function shape Section
+def drawSquare(length):
+ for i in range(4):
+    t.forward(length)
+    t.left(90)
+
 def drawRectangle(width, length):
     for _ in range(2):        
         t.forward(width)
@@ -36,11 +41,6 @@ def drawHexagon(length):
     t.forward(length)
     t.left(60)
 
-def drawSquare(length):
- for i in range(4):
-    t.forward(length)
-    t.left(90)
-
 def Goto(x, y):
     t.penup()
     t.goto(x, y)
@@ -50,10 +50,19 @@ def Goto(x, y):
 def drawHouse():
     t.left(90)
     drawSquare(100)
-    t.left(90)
+    # t.left(90)
     t.forward(100)
     t.left(90)
     drawTriangle(100)
+
+def drawTree():
+    t.left(180)    
+    drawRectangle(50, 100)
+    t.left(90)  
+    t.forward(100)
+    t.right(90)
+    t.backward(25)
+    drawPentagon(100)
 
 def drawGirl():
     drawCircle(0.5)
@@ -81,6 +90,9 @@ def drawGirl():
     t.pendown()
     t.forward(45)
 # Main Section
+drawHouse()
+Goto(300, 0)
+drawTree()
 drawGirl()
 # t.right(180)
 # t.penup()

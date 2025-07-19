@@ -60,20 +60,22 @@ def Goto(x, y):
 
 # Function to draw any thing
 def drawHouse():
-    drawSquare(4)
+    t.left(90)
+    drawSquare(100)
+    t.left(90)
     t.forward(100)
     t.left(90)
-    drawTriangle(3)
+    drawTriangle(100)
 
 # def drawGirl():
 
 
 # Main Section
 drawHouse()
-t.right(180)
-t.penup()
-t.forward(200)
-t.pendown()
-drawHexagon(50)
+# t.right(180)
+# t.penup()
+# t.forward(200)
+# t.pendown()
+# drawHexagon(50)
 
 t.done()

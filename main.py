@@ -1,7 +1,7 @@
 # Configuration Section
 import turtle as t
 
-t.speed(1)
+t.speed(100)
 
 t.width(5)
     
@@ -55,11 +55,33 @@ def drawHouse():
     t.left(90)
     drawTriangle(100)
 
-# def drawGirl():
-
-
+def drawGirl():
+    drawCircle(0.5)
+    t.right(60)
+    drawTriangle(100)
+    t.left(25)
+    t.forward(75)
+    t.backward(75)
+    t.left(250)
+    t.forward(75)
+    t.backward(75)
+    t.left(55)
+    t.penup()
+    t.forward(85)
+    t.left(90)
+    t.forward(15)
+    t.right(90)
+    t.pendown()
+    t.forward(45)
+    t.backward(45)
+    t.right(90)
+    t.penup()
+    t.forward(30)
+    t.left(90)
+    t.pendown()
+    t.forward(45)
 # Main Section
-drawHouse()
+drawGirl()
 # t.right(180)
 # t.penup()
 # t.forward(200)

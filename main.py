@@ -50,7 +50,6 @@ def Goto(x, y):
 def drawHouse():
     t.left(90)
     drawSquare(200)
-    # t.left(90)
     t.forward(200)
     t.left(90)
     drawTriangle(200)
@@ -63,6 +62,32 @@ def drawTree():
     t.right(90)
     t.backward(25)
     drawPentagon(100)
+
+def drawGirl():
+    drawCircle(0.5)
+    t.right(60)
+    drawTriangle(100)
+    t.left(25)
+    t.forward(75)
+    t.backward(75)
+    t.left(250)
+    t.forward(75)
+    t.backward(75)
+    t.left(55)
+    t.penup()
+    t.forward(85)
+    t.left(90)
+    t.forward(15)
+    t.right(90)
+    t.pendown()
+    t.forward(45)
+    t.backward(45)
+    t.right(90)
+    t.penup()
+    t.forward(30)
+    t.left(90)
+    t.pendown()
+    t.forward(45)
 
 def drawPlatypus():
     # body
@@ -107,11 +132,6 @@ def drawPlatypus():
     t.forward(80)
     t.pendown()
     drawCircle(0.1)
-
-
-
-# def drawGirl():
-
 
 # Main Section
 drawHouse()

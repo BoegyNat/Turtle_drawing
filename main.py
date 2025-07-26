@@ -89,6 +89,24 @@ def drawGirl():
     t.pendown()
     t.forward(45)
 
+def drawSun():
+    Goto(200, 200)
+    t.color("orange")
+    drawCircle(0.5)
+    t.penup()
+    t.left(90)
+    t.forward(30)
+    t.right(90)
+    t.pendown()
+    for _ in range(12):
+        t.penup()
+        t.forward(40)
+        t.pendown()
+        t.forward(20)
+        t.penup()
+        t.backward(60)
+        t.right(30)
+
 def drawPlatypus():
     # body
     drawRectangle(100, 50)
@@ -134,11 +152,7 @@ def drawPlatypus():
     drawCircle(0.1)
 
 # Main Section
-drawHouse()
-Goto(360, 0)
-drawTree()
-Goto(90, 25)
-drawPlatypus()
+drawSun()
 # t.right(180)
 # t.penup()
 # t.forward(200)

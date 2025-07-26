@@ -1,7 +1,7 @@
 # Configuration Section
 import turtle as t
 
-t.speed(1000000000)
+t.speed(1000)
 
 t.width(5)
     
@@ -133,12 +133,47 @@ def drawPlatypus():
     t.pendown()
     drawCircle(0.1)
 
+def drawChair():
+    t.right(90)
+    t.forward(80)
+    t.right(180)
+    t.forward(40)
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(40)
+
+def drawTable():
+    t.left(90)
+    t.forward(140)
+    t.right(90)
+    t.forward(40)
+    t.backward(40)
+    t.right(90)
+    t.forward(140)
+    t.left(90)
+    t.forward(40)
+    
+def drawChair2():
+    t.forward(80)
+    t.backward(40)
+    t.right(90)
+    t.forward(40)
+    t.left(90)
+    t.forward(40)
 # Main Section
-drawHouse()
-Goto(360, 0)
-drawTree()
-Goto(90, 25)
-drawPlatypus()
+# Goto(-150,0)
+# drawChair()
+# Goto(-90,-40)
+# drawTable()
+# Goto(110,0)
+# drawChair2()
+# drawGirl()
+# drawHouse()
+# Goto(360, 0)
+# drawTree()
+# Goto(90, 25)
+# drawPlatypus()
 # t.right(180)
 # t.penup()
 # t.forward(200)

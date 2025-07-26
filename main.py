@@ -1,7 +1,7 @@
 # Configuration Section
 import turtle as t
 
-t.speed(1000000000)
+t.speed(1000)
 
 t.width(5)
     
@@ -171,8 +171,134 @@ def drawPlatypus():
     t.pendown()
     drawCircle(0.1)
 
+def drawChair():
+    t.right(90)
+    t.forward(80)
+    t.right(180)
+    t.forward(40)
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(40)
+
+def drawTable():
+    t.left(90)
+    t.forward(140)
+    t.right(90)
+    t.forward(40)
+    t.backward(40)
+    t.right(90)
+    t.forward(140)
+    t.left(90)
+    t.forward(40)
+    
+def drawChair2():
+    t.forward(80)
+    t.backward(40)
+    t.right(90)
+    t.forward(40)
+    t.left(90)
+    t.forward(40)
+
+def drawDino():
+# head
+    drawSquare(100)
+# eyes
+    t.left(90)
+    t.forward(60)
+    t.penup()
+    t.right(90)    
+    t.forward(25)
+    t.pendown()
+    drawCircle(0.2)
+    t.penup()
+    t.forward(50)
+    t.pendown()
+    drawCircle(0.2)
+# tongue
+    t.penup()
+    t.backward(75)
+    t.right(90)
+    t.forward(60)
+    t.left(90)
+    t.forward(30)
+    t.pendown()
+    t.right(90)
+    drawRectangle(60, 40)
+ # necks
+    t.right(90)
+    t.forward(30)
+    t.right(90)
+    t.forward(100)
+    t.left(90)
+    drawSquare(50)
+    t.forward(50)
+    drawSquare(50)
+    t.forward(50)
+    drawSquare(50)
+    t.forward(50)
+    drawSquare(50)
+ # back   
+    t.forward(50)
+    drawSquare(100)
+# body
+    t.left(90)
+    t.forward(100)
+    t.right(90)
+    drawRectangle(200, 100)
+# legs
+    t.left(90)
+    t.forward(100)
+    t.right(90)
+    drawRectangle(50, 100)
+    t.forward(150)
+    drawRectangle(50, 100)
+# tails
+    t.forward(50)
+    t.right(90)
+    t.forward(100)
+    t.left(90)
+    drawSquare(50)
+    t.forward(50)
+    drawSquare(50)
+    t.forward(50)
+    drawSquare(50)
+    t.forward(50)
+    t.left(90)
+    t.forward(50)
+    drawSquare(50)
+    t.forward(50)
+    drawSquare(50)
+    t.forward(50)
+    t.right(180)
+    drawSquare(50)
+
 # Main Section
-drawMan()
+
+drawDino()
+
+# t.fillcolor("#ff0000")
+# # t.begin_fill()
+# drawHouse()
+# t.end_fill()
+
+# Goto(360, 0)
+# drawTree()
+# Goto(90, 25)
+# drawPlatypus()
+
+# Goto(-150,0)
+# drawChair()
+# Goto(-90,-40)
+# drawTable()
+# Goto(110,0)
+# drawChair2()
+# drawGirl()
+# drawHouse()
+# Goto(360, 0)
+# drawTree()
+# Goto(90, 25)
+# drawPlatypus()
 # t.right(180)
 # t.penup()
 # t.forward(200)

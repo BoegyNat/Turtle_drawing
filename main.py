@@ -89,6 +89,26 @@ def drawGirl():
     t.pendown()
     t.forward(45)
 
+def drawMan():
+    t.color("blue")
+    t.pendown()
+    drawCircle(0.5)
+    t.right(30)
+    t.forward(75)
+    t.backward(75)
+    t.left(240)
+    t.forward(75)
+    t.backward(75)
+    t.left(60)
+    t.forward(90)
+    t.left(30)
+    t.forward(75)
+    t.backward(75)
+    t.left(300)
+    t.forward(75)
+    t.backward(75)
+    
+
 def drawSun():
     Goto(200, 200)
     t.color("orange")
@@ -152,7 +172,7 @@ def drawPlatypus():
     drawCircle(0.1)
 
 # Main Section
-drawSun()
+drawMan()
 # t.right(180)
 # t.penup()
 # t.forward(200)

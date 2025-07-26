@@ -84,6 +84,8 @@ def drawTree():
     drawPentagon(100)
 
 def drawGirl():
+    t.color("pink")
+    t.right(180)
     drawCircle(0.5)
     t.right(60)
     drawTriangle(100)
@@ -111,6 +113,7 @@ def drawGirl():
 
 def drawMan():
     t.color("blue")
+    t.left(90)
     t.pendown()
     drawCircle(0.5)
     t.right(30)
@@ -127,10 +130,10 @@ def drawMan():
     t.left(300)
     t.forward(75)
     t.backward(75)
+    t.right(60)
     
 
 def drawSun():
-    Goto(200, 200)
     t.color("orange")
     drawCircle(0.5)
     t.penup()
@@ -148,6 +151,7 @@ def drawSun():
         t.right(30)
 
 def drawPlatypus():
+    t.left(90)
     # body
     drawRectangle(100, 50)
     # tail    
@@ -311,39 +315,35 @@ def drawDoor():
 
 
 # Main Section
-
+Goto(-1000, 0)
+t.forward(10000)
+Goto(0, 0)
+drawHouse()
+Goto(60, 80)
+drawChair()
+Goto(120, 40)
+drawTable()
+Goto(320, 80)
+drawChair2()
+Goto(-400, 25)
+drawPlatypus()
+Goto(-550, 130)
+drawGirl()
+Goto(-680, 160)
+drawMan()
+Goto(500, 0)
+drawTree()
+Goto(200, -150)
 drawDino()
+Goto(400, 0)
+t.right(90)
+drawHexagon(20)
+Goto(300, 300)
+drawSun()
 
-# t.fillcolor("#ff0000")
-# # t.begin_fill()
-# drawHouse()
-# t.end_fill()
 
-# Goto(360, 0)
-# drawTree()
-# Goto(90, 25)
-# drawPlatypus()
+# Goto(-120, 0)
+# drawDino()
 
-# Goto(-150,0)
-# drawChair()
-# Goto(-90,-40)
-# drawTable()
-# Goto(110,0)
-# drawChair2()
-# drawGirl()
-# drawHouse()
-# Goto(0,150)
-
-# Goto(-200,120)
-# drawDoor()
-# Goto(360, 0)
-# drawTree()
-# Goto(90, 25)
-# drawPlatypus()
-# t.right(180)
-# t.penup()
-# t.forward(200)
-# t.pendown()
-# drawHexagon(50)
 
 t.done()
